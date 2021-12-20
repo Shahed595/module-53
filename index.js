@@ -25,6 +25,13 @@ const users=[
 //     res.send(users)
 // })
 
+//app.method
+app.post('/users',(req,res)=>{
+    console.log("hitting the post")
+    res.send("inside post")
+})
+
+
 //dynamic api
 app.get("/users/:id",(req,res)=>{
     const id=req.params.id;
