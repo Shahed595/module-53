@@ -1,6 +1,11 @@
 const express=require('express');
+//middleware  installation start ===>installation command in node express website :topic->middleware
+const cors=require('cors');
 const { use } = require('express/lib/application');
 const app =express();
+
+app.use(cors())
+//middlewars installation end
 const port=3000;
 
 app.get('/',(req,res)=>{
